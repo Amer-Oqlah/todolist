@@ -17,7 +17,8 @@ class TaskController extends Controller
     }
 
     public function addTask(Request $request){ //add task
-        return tasks::create($request->all());
+       
+         return tasks::create($request->all());
     }
 
     public function update(Request $request, $id){ //udpate task
